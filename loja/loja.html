@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja de Vinhos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/loja.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="img/Rectangle 1.png" alt="Imagem de Vinho" />
+        <img id="logo" src="img/Logo_1610.png 2.png" alt="Logo" />
+
+        <nav class="Menu">
+          <li><a href="../home.html">HOME</a></li>
+          <li><a href="../vinhos/vinhos.html">VINHOS</a></li>
+          <li><a href="#loja">LOJA</a></li>
+          <li><a href="../eventos/eventos.html">EVENTOS</a></li>
+          <li><a href="../contato/contato.html">CONTATO</a></li>
+        </nav>
+        <a href="/carrinho_compra/index.html">
+          <button class="car_button">🛒</button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <h2>Pesquisar Vinhos:</h2>
+      <form action="/buscar-vinhos" method="GET">
+        <!-- Tipo de Vinho -->
+        <label for="tipo-vinho"><strong>Tipo de Vinho:</strong></label>
+        <select name="tipo-vinho" id="tipo-vinho">
+          <option value="">Todos</option>
+          <option value="tinto">Tinto</option>
+          <option value="branco">Branco</option>
+          <option value="rose">Rosé</option>
+          <option value="espumante">Espumante</option>
+          <option value="sobremesa">Sobremesa</option>
+        </select>
+
+        <!-- Faixa de Preço -->
+        <label for="preco-min"><strong>Preço</strong> (R$):</label>
+        <input
+          type="number"
+          name="preco-min"
+          id="preco-min"
+          placeholder="Mínimo"
+        />
+        <input
+          type="number"
+          name="preco-max"
+          id="preco-max"
+          placeholder="Máximo"
+        />
+
+        <!-- Variedade de Uva -->
+        <!-- <label for="uva"><strong>Variedade de Uva:</strong></label>
+        <select name="uva" id="uva">
+          <option value="">Todas</option>
+          <option value="cabernet-sauvignon">Cabernet Sauvignon</option>
+          <option value="merlot">Merlot</option>
+          <option value="malbec">Malbec</option>
+          <option value="pinot-noir">Pinot Noir</option>
+          <option value="chardonnay">Chardonnay</option>
+          <option value="sauvignon-blanc">Sauvignon Blanc</option>
+          <option value="outra">Outra</option>
+        </select> -->
+
+        <!-- País de Origem -->
+        <label for="pais"><strong>País de Origem:</strong></label>
+        <select name="pais" id="pais">
+          <option value="">Todos</option>
+          <option value="brasil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="franca">França</option>
+          <option value="italia">Itália</option>
+          <option value="espanha">Espanha</option>
+          <option value="portugal">Portugal</option>
+        </select>
+
+        <!-- Safra -->
+        <label for="safra"><strong>Safra:</strong></label>
+        <select name="safra" id="safra">
+          <option value="">Todas</option>
+          <option value="antes-2000">Antes de 2000</option>
+          <option value="2000-2010">2000 - 2010</option>
+          <option value="2010-2020">2010 - 2020</option>
+          <option value="apos-2020">Após 2020</option>
+        </select>
+
+        <!-- Teor Alcoólico -->
+        <!-- <label for="teor"><strong>Teor Alcoólico (%):</strong></label>
+        <input type="number" name="teor-min" id="teor" placeholder="Mínimo" />
+        <input type="number" name="teor-max" placeholder="Máximo" />
+ -->
+        <!-- Pontuação -->
+        <!-- <label for="pontuacao">Pontuação:</label>
+        <select name="pontuacao" id="pontuacao">
+          <option value="">Todas</option>
+          <option value="85">Acima de 85</option>
+          <option value="90">Acima de 90</option>
+          <option value="95">Acima de 95</option>
+        </select>
+        <br /><br /> -->
+
+        <!-- Harmonização -->
+        <label for="harmonizacao"><strong>Harmonização:</strong></label>
+        <select name="harmonizacao" id="harmonizacao">
+          <option value="">Todas</option>
+          <option value="aves">Aves</option>
+          <option value="carnes">Carnes Vermelhas</option>
+          <option value="peixes">Peixes e Frutos do Mar</option>
+          <option value="massas">Massas e Risotos</option>
+          <option value="queijos">Queijos</option>
+        </select>
+
+        <!-- Orgânico e Vegano -->
+        <!-- <label
+          ><input type="checkbox" name="organico" value="1" /> Orgânico</label
+        >
+        <label><input type="checkbox" name="vegano" value="1" /> Vegano</label>
+        <br /><br /> -->
+
+        <button type="submit">Buscar</button> <br />
+      </form>
+      <br />
+
+      <div class="produto-grid">
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home_1.png"
+            alt="Vinho tinto"
+          />
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome"><strong>VINHO TINTO</strong></p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home.png"
+            alt="Vinho tinto"
+          />
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome"><strong>VINHO SUAVE</strong></p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home_1.png"
+            alt="Vinho tinto"
+          />
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home.png"
+            alt="Vinho tinto"
+          />
+
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home_1.png"
+            alt="Vinho tinto"
+          />
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+        <div class="produto">
+          <img
+            class="divina_home"
+            src="img/divina_home.png"
+            alt="Vinho tinto"
+          />
+          <h3>DIVINA TAÇA</h3>
+          <p class="infoNome">
+            <strong>VINHO SECO</strong>
+          </p>
+          <p>
+            <br />
+            Preço:<strong class="infoPreco">129,90</strong>
+          </p>
+          <button class="add-produto">Adicionar ao Carrinho</button>
+          <button>Leia Mais</button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="copyright">
+        <p>&copy; 2025 Divina Taça. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

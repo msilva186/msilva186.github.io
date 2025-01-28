@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #993b3b;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: white;
+}
+
+/* element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+} */
+
+img {
+  width: 80%;
+  align-items: center;
+  position: center;
+  border-radius: 10px;
+  margin: 10%;
+}
+
+form#login {
+  display: flex;
+  position: center;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #9a9797;
+  background-color: #5b0505;
+  border-radius: 10px;
+}
+/* 
+label {
+  display: block;
+  margin-bottom: 10px;
+} */
+
+label {
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+label:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+nav {
+  justify-items: center;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid white;
+  background: white;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button {
+  background: #a20d0d;
+  color: white;
+  margin: 10px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  position: center;
+}
+
+a:hover {
+  color: #776f6f;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #ccbbbb;
+  color: white;
+}
+
+input.correct {
+  background-color: #bbccbb;
+  border: solid 2px #206620;
+  color: #206620;
+}
+
+.helper-text {
+  display: none;
+  font-size: 0.8rem;
+  color: white;
+}
+
+label {
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+
+label:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.visible {
+  display: block;
+}

@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  font-family: "Maven Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #993b3b;
+  height: 10%;
+}
+
+header {
+  background-size: cover;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0;
+}
+
+header img {
+  margin-bottom: -6%;
+  max-width: 1100px;
+  max-height: 350px;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+#logo {
+  margin-right: 55%;
+  margin-top: -15%;
+  margin-bottom: 5%;
+  max-width: 350px;
+}
+
+nav.menu {
+  margin: -9px;
+  width: 85.2%;
+  margin-left: 4.5%;
+}
+
+.menu {
+  display: flex;
+  background-color: #5b0505;
+  margin: 0 auto;
+  padding: 35px;
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 80px;
+}
+
+.menu ul li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+main section {
+  width: 80%;
+}
+
+main section article {
+  color: black;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 10px;
+  margin: 10px 0;
+  display: flex;
+  background-color: #5b0505;
+  flex-direction: column;
+  color: white;
+}
+
+article h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+article .top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 10px;
+}
+
+article .top img {
+  width: 300px;
+  height: auto;
+}
+
+article span {
+  margin-left: 15px;
+}
+
+article a {
+  color: white;
+  text-decoration: none;
+  background-color: #993b3b;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+  align-self: flex-end;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer div span {
+  color: white;
+  font-size: 16px;
+}
+.menu ul li a:hover {
+  color: #954646;
+}
+
+article a:hover {
+  color: #5b0505;
+}
+
+@media (max-width: 1100px) {
+  header img {
+    margin-bottom: -6%;
+    max-width: 90%;
+    max-height: 300px;
+    height: auto;
+  }
+
+  #logo {
+    margin-right: 64%;
+    margin-top: -25%;
+    margin-bottom: 5%;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .button-header a {
+    font-size: 20px;
+  }
+
+  .menu ul li a {
+    font-size: 25px;
+  }
+  .titulo-card {
+    font-size: 35px;
+  }
+  article .top {
+    font-size: 30px;
+  }
+  main section article span {
+    font-size: 23px;
+  }
+  main section article a {
+    font-size: 20px;
+  }
+  footer .redes_sociais {
+    font-size: 25px;
+  }
+
+  footer .outras_info {
+    font-size: 25px;
+  }
+
+  footer div h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  main section article {
+    width: 100%;
+  }
+
+  main section article span {
+    font-size: 23px;
+  }
+  article .top {
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+  }
+
+  article .top img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer .redes_sociais {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  footer .outras_info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+div#copyright p {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  background: #993b3b;
+  width: 78.3%;
+  margin-left: 10%;
+  padding: 1%;
+}
